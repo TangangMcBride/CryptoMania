@@ -58,12 +58,13 @@ const Navbar: React.FC = () => {
       <Menu.Item key="2" icon={<VideoCameraOutlined />}>
         <Link to="/cryptocurrencies">Cryptocurrencies</Link>
       </Menu.Item>
-      <Menu.Item key="3" icon={<UploadOutlined />}>
-        <Link to="/exchanges">Exchanges</Link>
-      </Menu.Item>
       <Menu.Item key="4" icon={<UserOutlined />}>
         <Link to="/news">News</Link>
       </Menu.Item>
+      <Menu.Item key="3" icon={<UploadOutlined />}>
+        <Link to="/exchanges">Exchanges</Link>
+      </Menu.Item>
+     
     </Menu>
   );
 };
