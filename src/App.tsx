@@ -9,11 +9,9 @@ import React, { useState } from "react";
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
+ 
 } from "@ant-design/icons";
-import { Avatar, Layout, Menu, Button, theme, Typography } from "antd";
+import { Avatar, Layout, Button, theme, Typography } from "antd";
 
 const { Header, Sider, Content, Footer } = Layout;
 
@@ -63,7 +61,7 @@ const App: React.FC = () => {
               <Route path="/" element={<Home />} />
               <Route path="/cryptocurrencies" element={<Cryptocurrencies simplified={false} />} />
               <Route path="/exchanges" element={<Exchanges />} />
-              <Route path="/news" element={<News />} />
+              <Route path="/news" element={<News simplified={false} />} />
             </Routes>
           </div>
         </Content>
